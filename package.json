@@ -1,11 +1,24 @@
 {
   "name": "foxyfs",
   "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "",
+  "description": "Wrappers around node:fs/promises — every operation checks its result before resolving.",
+  "license": "CC-BY-SA-4.0",
+  "author": "Quentin Lamamy <contact@quentin-lamamy.fr> (https://github.com/quentinlamamy)",
   "type": "module",
   "main": "index.js",
+  "keywords": [
+    "fs",
+    "filesystem",
+    "fs-promises",
+    "file",
+    "safe",
+    "node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cafeine-Software/foxyFs.git"
+  },
+  "homepage": "http://cafeine-sofware.fr/products",
   "scripts": {
     "test": "node --test"
   }
