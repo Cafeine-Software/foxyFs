@@ -1,5 +1,5 @@
 {
-  "name": "foxyfs",
+  "name": "@cafeine-software/foxyfs",
   "version": "1.0.0",
   "description": "Wrappers around node:fs/promises — every operation checks its result before resolving.",
   "license": "CC-BY-SA-4.0",
