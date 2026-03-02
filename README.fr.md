@@ -5,6 +5,7 @@
 <br/>
 
 <p>
+  <img alt="Tests" src="https://github.com/Cafeine-Software/foxyFs/actions/workflows/tests.yml/badge.svg" />
   <img alt="Licence" src="https://img.shields.io/badge/Licence-CC%20BY--SA%204.0-6F4E37?style=flat-square" />
   <img alt="Node.js" src="https://img.shields.io/badge/Node.js-ESM-339933?style=flat-square&logo=node.js&logoColor=white" />
 </p>
