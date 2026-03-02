@@ -1,11 +1,11 @@
 <div align="center">
 
-<img src="./banner.svg" alt="foxyFs" width="800"/>
+<img src="./assets/banner.svg" alt="foxyFs" width="800"/>
 
 <br/>
 
 <p>
-  <img alt="Tests" src="https://github.com/Cafeine-Software/foxyFs/actions/workflows/tests.yml/badge.svg" />
+  <img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/Cafeine-Software/foxyFs/tests.yml?style=flat-square&label=tests&logo=github&logoColor=white" />
   <img alt="License" src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-6F4E37?style=flat-square" />
   <img alt="Node.js" src="https://img.shields.io/badge/Node.js-ESM-339933?style=flat-square&logo=node.js&logoColor=white" />
 </p>
@@ -242,18 +242,12 @@ Uses the native `node:test` runner — no external test dependency.
 
 ## Contributors
 
-| Name | GitHub | Contact |
-|------|--------|---------|
-| Quentin Lamamy | [@quentinlamamy](https://github.com/quentinlamamy) | [contact@quentin-lamamy.fr](mailto:contact@quentin-lamamy.fr) |
+[![Quentin Lamamy](./assets/contributor-quentinlamamy.svg)](https://github.com/quentinlamamy)
 
 ## Support
 
-If this project is useful to you, you can support its development:
-
-[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-6F4E37?style=for-the-badge&logo=buymeacoffee&logoColor=white)](https://example.com)
-
-> Support link coming soon.
+[![Buy me a coffee](./assets/support-banner.svg)](https://example.com)
 
 ## License
 
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+[![CC BY-SA 4.0](./assets/license-banner.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

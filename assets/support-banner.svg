@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 140" width="800" height="140">
+  <defs>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#0d0d12"/>
+      <stop offset="100%" stop-color="#15121f"/>
+    </linearGradient>
+
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.85" fill="#1e1e2e"/>
+    </pattern>
+
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#b85a28"/>
+      <stop offset="35%"  stop-color="#e8873a"/>
+      <stop offset="50%"  stop-color="#ffd4a0"/>
+      <stop offset="65%"  stop-color="#e8873a"/>
+      <stop offset="100%" stop-color="#b85a28"/>
+      <animate attributeName="x1" dur="8s" values="-100%;100%;100%" keyTimes="0;0.18;1" repeatCount="indefinite"/>
+      <animate attributeName="x2" dur="8s" values="0%;200%;200%"   keyTimes="0;0.18;1" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <filter id="glow" x="-15%" y="-60%" width="130%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="clip">
+      <rect width="800" height="140"/>
+    </clipPath>
+
+  </defs>
+
+  <g clip-path="url(#clip)">
+
+    <!-- Background -->
+    <rect width="800" height="140" fill="url(#bg)"/>
+    <rect width="800" height="140" fill="url(#dots)"/>
+
+    <!-- Left accent bar -->
+    <rect x="0" y="0" width="4" height="140" fill="#e8873a">
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- "SUPPORT THIS PROJECT" -->
+    <text x="28" y="48"
+      font-family="'Segoe UI',system-ui,sans-serif"
+      font-size="10.5" fill="#3e3e54" letter-spacing="2.5">SUPPORT THIS PROJECT</text>
+
+    <!-- "Buy me a coffee" -->
+    <text x="24" y="103"
+      font-family="'Segoe UI',system-ui,-apple-system,BlinkMacSystemFont,sans-serif"
+      font-size="58" font-weight="800" letter-spacing="-1"
+      fill="url(#shimmer)" filter="url(#glow)">Buy me a coffee</text>
+
+    <!-- Vertical separator -->
+    <line x1="476" y1="18" x2="476" y2="122"
+      stroke="#e8873a" stroke-width="1" stroke-opacity="0.18"/>
+
+    <!-- Floating thank-yous (right zone) -->
+    <g font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#58587a">
+
+      <text x="530" y="38" opacity="0">Thank you
+        <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.15;0.7;1" dur="7s" begin="0s" repeatCount="indefinite"/>
+      </text>
+      <text x="618" y="62" opacity="0">Merci
+        <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.15;0.7;1" dur="8s" begin="1.5s" repeatCount="indefinite"/>
+      </text>
+      <text x="548" y="82" opacity="0">Gracias
+        <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.15;0.7;1" dur="6.5s" begin="3s" repeatCount="indefinite"/>
+      </text>
+      <text x="660" y="48" opacity="0">Danke
+        <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.15;0.7;1" dur="9s" begin="0.8s" repeatCount="indefinite"/>
+      </text>
+      <text x="572" y="104" opacity="0">ありがとう
+        <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.15;0.7;1" dur="7.5s" begin="4.5s" repeatCount="indefinite"/>
+      </text>
+      <text x="680" y="88" opacity="0">감사합니다
+        <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.15;0.7;1" dur="8.5s" begin="2.2s" repeatCount="indefinite"/>
+      </text>
+      <text x="534" y="122" opacity="0">Grazie
+        <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.15;0.7;1" dur="7s" begin="5.5s" repeatCount="indefinite"/>
+      </text>
+      <text x="700" y="118" opacity="0">Obrigado
+        <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.15;0.7;1" dur="6s" begin="1s" repeatCount="indefinite"/>
+      </text>
+
+    </g>
+
+    <!-- Vignette right edge -->
+    <rect x="680" y="0" width="120" height="140" fill="url(#bg)" opacity="0.6"/>
+
+    <!-- Border -->
+    <rect width="800" height="140"
+      fill="none" stroke="#e8873a" stroke-width="1" stroke-opacity="0.1"/>
+
+  </g>
+</svg>
